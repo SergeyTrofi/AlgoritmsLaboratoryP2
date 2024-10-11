@@ -1,0 +1,21 @@
+﻿<Window x:Class="LaboratoryP2.Properties.RecHanoiTowers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LaboratoryP2.Properties"
+        mc:Ignorable="d"
+        Title="RecHanoiTowers" Height="450" Width="800">
+    <Grid>
+
+        
+        <TextBlock HorizontalAlignment="Left" Margin="70,368,0,0" TextWrapping="Wrap" Text="Discs" VerticalAlignment="Top" RenderTransformOrigin="1.683,0.511" Height="27" Width="40"/>
+        <Image HorizontalAlignment="Left" Height="161" Margin="70,0,0,0" VerticalAlignment="Center" Width="155" Source="/Properties/палка.jpg"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="376,164,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image HorizontalAlignment="Left" Height="161" Margin="580,0,0,0" VerticalAlignment="Center" Width="155" Source="/Properties/палка.jpg"/>
+        <Image HorizontalAlignment="Center" Height="161" VerticalAlignment="Center" Width="156" Source="/Properties/палка.jpg"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="618,368,0,0" VerticalAlignment="Top" Height="27" Width="80"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="322,368,0,0" TextWrapping="Wrap" Text="Count" VerticalAlignment="Top" Width="78" Height="27"/>
+    </Grid>
+</Window>
