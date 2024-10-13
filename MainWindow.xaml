@@ -8,8 +8,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Fractals" HorizontalAlignment="Left" Margin="162,322,0,0" VerticalAlignment="Top"/>
-        <Button Content="Hanoi Tower Recursion" HorizontalAlignment="Left" Margin="364,322,0,0" VerticalAlignment="Top" Click="RHTower_Click"/>
-        <Button Content="Hanoi Tower Stack" HorizontalAlignment="Left" Margin="584,322,0,0" VerticalAlignment="Top"/>
+        <Button Content="Fractals" HorizontalAlignment="Left" Margin="40,322,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Hanoi Tower Recursion" HorizontalAlignment="Center" Margin="0,322,0,0" VerticalAlignment="Top" Click="RHTower_Click" Width="200"/>
+        <Button Content="Hanoi Tower Stack" HorizontalAlignment="Left" Margin="550,322,0,0" VerticalAlignment="Top" Width="199"/>
     </Grid>
 </Window>

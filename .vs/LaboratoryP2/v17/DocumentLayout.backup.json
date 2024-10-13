@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\",
+  "WorkspaceRootPath": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 c#\\\u043D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\algorithmsparttwo\\laboratoryp2\\properties\\rechanoitowers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\properties\\rechanoitowers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:properties\\rechanoitowers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 c#\\\u043D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\algorithmsparttwo\\laboratoryp2\\properties\\rechanoitowers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 c#\\\u043D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\algorithmsparttwo\\algoritmslaboratoryp2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\rechanoitower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:rechanoitower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 c#\\\u043D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\algorithmsparttwo\\algoritmslaboratoryp2\\properties\\rechanoitowers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:properties\\rechanoitowers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 c#\\\u043D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\algorithmsparttwo\\laboratoryp2\\rechanoitower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:rechanoitower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C643DEEC-6129-44B0-89B9-D03009E35044}|LaboratoryP2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,40 +54,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-13T09:58:52.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RecHanoiTowers.xaml",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\Properties\\RecHanoiTowers.xaml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\Properties\\RecHanoiTowers.xaml",
               "RelativeDocumentMoniker": "Properties\\RecHanoiTowers.xaml",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\Properties\\RecHanoiTowers.xaml*",
-              "RelativeToolTip": "Properties\\RecHanoiTowers.xaml*",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\Properties\\RecHanoiTowers.xaml",
+              "RelativeToolTip": "Properties\\RecHanoiTowers.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-11T21:27:05.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "RecHanoiTower.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\RecHanoiTower.cs",
+              "RelativeDocumentMoniker": "RecHanoiTower.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\RecHanoiTower.cs",
+              "RelativeToolTip": "RecHanoiTower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T21:26:53.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RecHanoiTowers.xaml.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\Properties\\RecHanoiTowers.xaml.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\Properties\\RecHanoiTowers.xaml.cs",
               "RelativeDocumentMoniker": "Properties\\RecHanoiTowers.xaml.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\Properties\\RecHanoiTowers.xaml.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\Properties\\RecHanoiTowers.xaml.cs",
               "RelativeToolTip": "Properties\\RecHanoiTowers.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T21:27:10.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RecHanoiTower.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\RecHanoiTower.cs",
-              "RelativeDocumentMoniker": "RecHanoiTower.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\LaboratoryP2\\RecHanoiTower.cs",
-              "RelativeToolTip": "RecHanoiTower.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowDgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T21:26:53.721Z",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043D\u0430 C#\\\u041D\u0438\u043A\u043E\u043B\u0430\u0435\u0432 \u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B\\AlgorithmsPartTwo\\AlgoritmsLaboratoryP2\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-12T12:03:47.261Z",
               "EditorCaption": ""
             }
           ]
