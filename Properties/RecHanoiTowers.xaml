@@ -5,10 +5,11 @@
     <Grid Background="#FFEEE7FF">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="17*"/>
-            <ColumnDefinition Width="783*"/>
+            <ColumnDefinition Width="514*"/>
+            <ColumnDefinition Width="269*"/>
         </Grid.ColumnDefinitions>
 
-        <Border BorderBrush="Black" BorderThickness="1" Margin="50,90,50,90" Grid.Column="1">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="50,90,50,90" Grid.Column="1" Grid.ColumnSpan="2">
             <StackPanel Background="#FFF4F4F4">
 
 
@@ -17,7 +18,7 @@
         </Border>
 
         <TextBlock HorizontalAlignment="Left" Margin="311,370,0,0" TextWrapping="Wrap" Text="Discs:" VerticalAlignment="Top" Height="32" Width="60" Foreground="Black" FontSize="22" Grid.Column="1"/>
-        <Button Content="Reset" HorizontalAlignment="Left" Margin="606,370,0,0" VerticalAlignment="Top" Height="32" Width="69" Grid.Column="1" Click="ResetButton_Click" />
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="92,370,0,0" VerticalAlignment="Top" Height="32" Width="69" Grid.Column="2" Click="ResetButton_Click" />
         <Button Content="Start" HorizontalAlignment="Left" Margin="95,370,0,0" VerticalAlignment="Top" Width="70" Grid.Column="1" Click="StartButton_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="348,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" FontSize="24" Width="113" Grid.Column="1" Text="Moves:"/>
 
@@ -26,10 +27,10 @@
         <TextBlock Name="StepsTextBlock" HorizontalAlignment="Left" Margin="371,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="139" FontSize="24" Grid.Column="1"/>
 
         <Image HorizontalAlignment="Left" Height="161" Margin="70,0,0,0" VerticalAlignment="Center" Width="155" Source="/Properties/палка.jpg" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="161" Margin="550,0,0,0" VerticalAlignment="Center" Width="155" Source="/Properties/палка.jpg" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="161" Margin="36,0,0,0" VerticalAlignment="Center" Width="155" Source="/Properties/палка.jpg" Grid.Column="2"/>
         <Image HorizontalAlignment="Left" Height="161" VerticalAlignment="Center" Width="156" Source="/Properties/палка.jpg" Grid.Column="1" Margin="305,0,0,0"/>
-        <StackPanel x:Name="Tower1" Grid.Column="1" Margin="70,141,558,151"/>
-        <StackPanel x:Name="Tower2" Grid.Column="1" Margin="311,141,322,151"/>
-        <StackPanel x:Name="Tower3" Grid.Column="1" Margin="550,141,78,151"/>
+        <StackPanel x:Name="Tower1" Grid.Column="1" Margin="70,141,289,142"/>
+        <StackPanel x:Name="Tower2" Grid.Column="1" Margin="311,141,53,141"/>
+        <StackPanel x:Name="Tower3" Grid.Column="2" Margin="36,141,78,141"/>
     </Grid>
 </Window>
