@@ -12,6 +12,7 @@ namespace LaboratoryP2.Properties
     {
         private int diskCount;
         private int stepCount;
+        
         private List<List<Rectangle>> towers;
 
         public RecHanoiTowers()
@@ -24,11 +25,9 @@ namespace LaboratoryP2.Properties
         {
             if (int.TryParse(DiscCountTextBox.Text, out diskCount) && diskCount > 0)
             {
-                StepsTextBlock.Text = string.Empty;
-                stepCount = 0; // Сброс счётчика шагов
-                InitializeTowers();
-                await SolveHanoi(diskCount, 0, 2, 1);
-                StepsTextBlock.Text = stepCount.ToString(); // Выводим количество шагов
+                ResetGame();
+                await SolveHanoi(diskCount, 0, 2, 1); // Move from Tower 1 to Tower 3
+                StepsTextBlock.Text = stepCount.ToString();
             }
             else
             {
@@ -36,118 +35,107 @@ namespace LaboratoryP2.Properties
             }
         }
 
+        private void ResetGame()
+        {
+            StepsTextBlock.Text = string.Empty;
+            stepCount = 0;
+            InitializeTowers();
+        }
+
         private void InitializeTowers()
         {
             Tower1.Children.Clear();
             Tower2.Children.Clear();
             Tower3.Children.Clear();
-            towers[0].Clear();
-            towers[1].Clear();
-            towers[2].Clear();
+            towers.ForEach(t => t.Clear());
 
             for (int i = 1; i <= diskCount; i++)
             {
-                Rectangle disk = new Rectangle
-                {
-                    Width = i * 20, // Размер диска зависит от текущего индекса
-                    Height = 20,
-                    Fill = new SolidColorBrush(GetDiskColor(i - 1)), // Цвет диска
-                    Margin = new Thickness(0, 0, 0, 5)
-                };
-                Tower1.Children.Add(disk); // Добавляем диск в первую башню
-                towers[0].Add(disk); // Добавляем диск в список
+                var disk = CreateDisk(i);
+                Tower1.Children.Add(disk); // Start with disks on Tower 1
+                towers[0].Add(disk);
             }
+        }
+
+        private Rectangle CreateDisk(int index)
+        {
+            return new Rectangle
+            {
+                Width = index * 20,
+                Height = 20,
+                Fill = new SolidColorBrush(GetDiskColor(index - 1)),
+                Margin = new Thickness(0, 0, 0, 5)
+            };
         }
 
         private Color GetDiskColor(int index)
         {
-            switch (index)
-            {
-                case 0: return Colors.Red;
-                case 1: return Colors.Green;
-                case 2: return Colors.Blue;
-                case 3: return Colors.Yellow;
-                case 4: return Colors.Purple;
-                default: return Colors.Black;
-            }
+            if (index == 0) return Colors.Red;
+            if (index == 1) return Colors.Green;
+            if (index == 2) return Colors.Blue;
+            if (index == 3) return Colors.Yellow;
+            if (index == 4) return Colors.Purple;
+            return Colors.Black;
         }
 
         private async Task SolveHanoi(int n, int from, int to, int aux)
         {
-            if (n == 1)
-            {
-                await MoveDisk(from, to);
-                stepCount++; // Увеличиваем количество шагов
-                return;
-            }
+            if (n <= 0) return; // Base case to prevent recursion on zero disks.
 
-            await SolveHanoi(n - 1, from, aux, to);
-            await MoveDisk(from, to);
-            stepCount++; // Увеличиваем количество шагов
-            await SolveHanoi(n - 1, aux, to, from);
+            await SolveHanoi(n - 1, from, aux, to); // Move n-1 disks to auxiliary
+            await MoveDisk(from, to); // Move the nth disk to the target
+            await SolveHanoi(n - 1, aux, to, from); // Move n-1 disks from auxiliary to target
         }
 
         private async Task MoveDisk(int from, int to)
         {
             if (towers[from].Count > 0)
             {
-                Rectangle disk = towers[from][0]; // Получаем нижний диск
+                var disk = towers[from][0];
 
-                // Проверяем, можно ли переместить диск на целевую башню
-                if (towers[to].Count == 0 || towers[to][0].Width > disk.Width)
+                if (CanMoveDisk(disk, to))
                 {
-                    // Удаляем диск из исходной башни
-                    towers[from].RemoveAt(0); // Удаляем диск из списка
-                    await Task.Delay(400);
+                    towers[from].RemoveAt(0);
 
-                    // Удаляем диск из текущего родителя
-                    if (disk.Parent is Panel currentParent)
-                    {
-                        currentParent.Children.Remove(disk);
-                    }
+                    await Task.Delay(500);
+                    RemoveDiskFromParent(disk);
+                    towers[to].Insert(0, disk); // Insert at the beginning to maintain order
+                    GetTowerPanel(to).Children.Insert(0, disk); // Add to the tower panel
 
-                    towers[to].Insert(0, disk); // Добавляем диск в целевую башню
-                    GetTowerPanel(to).Children.Add(disk); // Добавляем диск в визуальный элемент
+                    stepCount++; // Увеличиваем количество шагов
+                    StepsTextBlock.Text = stepCount.ToString(); // Обновляем текстовое поле
                 }
-                else
-                {
-                    MessageBox.Show("Нельзя положить диск большего размера на меньший.");
-                }
+            }
+        }
+
+
+        private bool CanMoveDisk(Rectangle disk, int to)
+        {
+            return towers[to].Count == 0 || towers[to][0].Width > disk.Width;
+        }
+
+        private void RemoveDiskFromParent(Rectangle disk)
+        {
+            if (disk.Parent is Panel currentParent)
+            {
+                currentParent.Children.Remove(disk);
             }
         }
 
         private StackPanel GetTowerPanel(int index)
         {
-            if (index == 0)
-            {
-                return Tower1;
-            }
-            else if (index == 1)
-            {
-                return Tower2;
-            }
-            else if (index == 2)
-            {
-                return Tower3;
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException(nameof(index), "Invalid tower index.");
-            }
-        }
+            if (index == 0) return Tower1;
+            if (index == 1) return Tower2;
+            if (index == 2) return Tower3;
 
+            throw new ArgumentOutOfRangeException(nameof(index), "Invalid tower index.");
+        }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
             StepsTextBlock.Text = string.Empty;
             DiscCountTextBox.Text = string.Empty;
-            Tower1.Children.Clear();
-            Tower2.Children.Clear();
-            Tower3.Children.Clear();
-            towers.Clear();
-            towers.Add(new List<Rectangle>());
-            towers.Add(new List<Rectangle>());
-            towers.Add(new List<Rectangle>());
+            InitializeTowers();
         }
     }
 }
