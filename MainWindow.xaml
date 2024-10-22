@@ -8,7 +8,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFE1E2FF">
-        <Button Content="Fractals" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="202"/>
+        <Button Content="Fractals" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="202" Click="Button_Click"/>
         <Button Content="Hanoi Tower Recursion" HorizontalAlignment="Center" VerticalAlignment="Center" Click="RHTower_Click" Width="200"/>
         <Button Content="Hanoi Tower Stack" HorizontalAlignment="Left" Margin="549,0,0,0" VerticalAlignment="Center" Width="199"/>
     </Grid>
