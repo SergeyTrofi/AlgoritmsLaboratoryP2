@@ -1,4 +1,5 @@
-﻿using LaboratoryP2.Properties;
+﻿using HanoiTowers;
+using LaboratoryP2.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace LaboratoryP2
 {
@@ -30,6 +32,13 @@ namespace LaboratoryP2
         {
             RecHanoiTowers win2 = new RecHanoiTowers();
             win2.Show();
+            this.Close();
+        }
+
+        private void SHTower_Click(object sender, RoutedEventArgs e)
+        {
+            StackHanoiTowers win3 = new StackHanoiTowers(); // StackHanoiTowers окно для решения через стек
+            win3.Show();
             this.Close();
         }
     }
