@@ -1,0 +1,15 @@
+﻿<Window x:Class="LaboratoryP2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LaboratoryP2"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE1E2FF">
+        <Button Content="Fractals" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Center" Width="202"/>
+        <Button Content="Hanoi Tower Recursion" HorizontalAlignment="Center" VerticalAlignment="Center" Click="RHTower_Click" Width="200"/>
+        <Button Content="Hanoi Tower Stack" HorizontalAlignment="Left" Margin="549,0,0,0" VerticalAlignment="Center" Width="199"/>
+    </Grid>
+</Window>
