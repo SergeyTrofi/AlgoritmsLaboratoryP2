@@ -32,5 +32,12 @@ namespace LaboratoryP2
             win2.Show();
             this.Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Fractal fractal = new Fractal();
+            fractal.Show();
+            this.Close();
+        }
     }
 }
