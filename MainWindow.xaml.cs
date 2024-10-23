@@ -39,5 +39,12 @@ namespace LaboratoryP2
             fractal.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            StackHanoiTowers stackHanoiTowers = new StackHanoiTowers();
+            stackHanoiTowers.Show();
+            this.Close();
+        }
     }
 }
