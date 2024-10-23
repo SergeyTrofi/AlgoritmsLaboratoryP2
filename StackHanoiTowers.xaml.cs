@@ -33,9 +33,13 @@ namespace LaboratoryP2
         {
             if (int.TryParse(DiscCountTextBox.Text, out diskCount) && diskCount > 0)
             {
+                ResetButton.Visibility = Visibility.Hidden;
+                StartButton.Visibility = Visibility.Hidden;
                 ResetGame();
                 await SolveHanoi(diskCount, 0, 2, 1); // Перемещение дисков с башни 1 на башню 3
                 StepsTextBlock.Text = stepCount.ToString();
+                ResetButton.Visibility = Visibility.Visible;
+                StartButton.Visibility = Visibility.Visible;
             }
             else
             {

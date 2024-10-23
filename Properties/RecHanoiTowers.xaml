@@ -18,8 +18,8 @@
         </Border>
 
         <TextBlock HorizontalAlignment="Left" Margin="311,370,0,0" TextWrapping="Wrap" Text="Discs:" VerticalAlignment="Top" Height="32" Width="60" Foreground="Black" FontSize="22" Grid.Column="1"/>
-        <Button Content="Reset" HorizontalAlignment="Left" Margin="92,370,0,0" VerticalAlignment="Top" Height="32" Width="69" Grid.Column="2" Click="ResetButton_Click" />
-        <Button Content="Start" HorizontalAlignment="Left" Margin="95,370,0,0" VerticalAlignment="Top" Width="70" Grid.Column="1" Click="StartButton_Click"/>
+        <Button x:Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="92,370,0,0" VerticalAlignment="Top" Height="32" Width="69" Grid.Column="2" Click="ResetButton_Click" />
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="95,370,0,0" VerticalAlignment="Top" Width="70" Grid.Column="1" Click="StartButton_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="348,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" FontSize="24" Width="113" Grid.Column="1" Text="Moves:"/>
 
         <TextBox Name="DiscCountTextBox" HorizontalAlignment="Left" Margin="371,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="32" FontSize="18" Grid.Column="1"/>
