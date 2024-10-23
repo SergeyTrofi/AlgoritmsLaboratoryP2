@@ -92,9 +92,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="StackHanoiTowers.xaml.cs">
-      <DependentUpon>StackHanoiTowers.xaml</DependentUpon>
-    </Compile>
     <Page Include="Fractal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,10 +113,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Properties\RecHanoiTowers.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StackHanoiTowers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
