@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,9 +26,13 @@ namespace LaboratoryP2.Properties
         {
             if (int.TryParse(DiscCountTextBox.Text, out diskCount) && diskCount > 0)
             {
+                ResetButton.Visibility = Visibility.Hidden;
+                StartButton.Visibility = Visibility.Hidden;
                 ResetGame();
                 await SolveHanoi(diskCount, 0, 2, 1); // Move from Tower 1 to Tower 3
                 StepsTextBlock.Text = stepCount.ToString();
+                ResetButton.Visibility = Visibility.Visible;
+                StartButton.Visibility = Visibility.Visible;
             }
             else
             {
