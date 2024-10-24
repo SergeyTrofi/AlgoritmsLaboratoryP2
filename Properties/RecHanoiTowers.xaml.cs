@@ -29,7 +29,7 @@ namespace LaboratoryP2.Properties
                 ResetButton.Visibility = Visibility.Hidden;
                 StartButton.Visibility = Visibility.Hidden;
                 ResetGame();
-                await SolveHanoi(diskCount, 0, 2, 1); // Move from Tower 1 to Tower 3
+                await SolveHanoi(diskCount, 0, 2, 1, true); // Move from Tower 1 to Tower 3
                 StepsTextBlock.Text = stepCount.ToString();
                 ResetButton.Visibility = Visibility.Visible;
                 StartButton.Visibility = Visibility.Visible;
@@ -83,16 +83,16 @@ namespace LaboratoryP2.Properties
             return Colors.Black;
         }
 
-        private async Task SolveHanoi(int n, int from, int to, int aux)
+        public async Task SolveHanoi(int n, int from, int to, int aux, bool flag)
         {
             if (n <= 0) return; // Base case to prevent recursion on zero disks.
 
-            await SolveHanoi(n - 1, from, aux, to); // Move n-1 disks to auxiliary
-            await MoveDisk(from, to); // Move the nth disk to the target
-            await SolveHanoi(n - 1, aux, to, from); // Move n-1 disks from auxiliary to target
+            await SolveHanoi(n - 1, from, aux, to, flag); // Move n-1 disks to auxiliary
+            await MoveDisk(from, to, flag); // Move the nth disk to the target
+            await SolveHanoi(n - 1, aux, to, from, flag); // Move n-1 disks from auxiliary to target
         }
 
-        private async Task MoveDisk(int from, int to)
+        private async Task MoveDisk(int from, int to, bool flag)
         {
             if (towers[from].Count > 0)
             {
@@ -101,8 +101,10 @@ namespace LaboratoryP2.Properties
                 if (CanMoveDisk(disk, to))
                 {
                     towers[from].RemoveAt(0);
-
-                    await Task.Delay(500);
+                    if (flag)
+                    { 
+                        await Task.Delay(500);
+                    }
                     RemoveDiskFromParent(disk);
                     towers[to].Insert(0, disk); // Insert at the beginning to maintain order
                     GetTowerPanel(to).Children.Insert(0, disk); // Add to the tower panel
