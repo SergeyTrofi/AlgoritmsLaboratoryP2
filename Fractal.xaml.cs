@@ -48,7 +48,7 @@ namespace LaboratoryP2
             if (int.TryParse(deep.Text, out int _deep))
             {
                 DragonFractal dragonFractal = new DragonFractal(_deep);
-                dragonFractal.DrawFractal(Plot);
+                dragonFractal.StartFractal(Plot);
                 
             }
             else
@@ -79,13 +79,8 @@ namespace LaboratoryP2
             _pointsStart = new Point(0, 0);
         }
 
-
-        public void DrawFractal(PlotView plotView)
+        public void StartFractal(PlotView plotView)
         {
-            DataPoint currentPos = new DataPoint(_pointsStart.X, _pointsStart.Y);
-
-            List<DataPoint> pointsList = new List<DataPoint>(); 
-
             for (int i = 0; i < _deep; i++)
             {
                 foreach (char ch in axiom)
@@ -96,30 +91,40 @@ namespace LaboratoryP2
                 tempAx = string.Empty;
             }
 
-            foreach (char k in axiom)
-            {
-                if (k == 'F')
-                {
-                   var nextPoint = new DataPoint(
-                       currentPos.X + 2 * Math.Cos(angle * Math.PI / 180),
-                       currentPos.Y - 2 * Math.Sin(angle * Math.PI / 180)
-                       );
+            DrawFractalRecursive(plotView,new DataPoint(_pointsStart.X, _pointsStart.Y), new List<DataPoint>(), axiom, 0);
+        }
 
-                    pointsList.Add(currentPos);
-                    pointsList.Add(nextPoint);
-                    currentPos = new DataPoint(pointsList.Last().X, pointsList.Last().Y);
-                }
-                else if (k == '+')
-                {
-                    angle += 90;
-                }
-                else if (k == '-')
-                {
-                    angle -= 90;
-                }
-            };
-            DrawLine(pointsList);         
-            plotModel.Axes.Clear();
+
+        private void DrawFractalRecursive(PlotView plotView, DataPoint currentPos, List<DataPoint> pointsList, string axiom, int index)
+        {
+            if (index >= axiom.Length) return;
+
+            char k = axiom[index];
+
+            if (k == 'F')
+            {
+                var nextPoint = new DataPoint(
+                    currentPos.X + 2 * Math.Cos(angle * Math.PI / 180),
+                    currentPos.Y - 2 * Math.Sin(angle * Math.PI / 180)
+                );
+
+                pointsList.Add(currentPos);
+                pointsList.Add(nextPoint);
+                currentPos = nextPoint;
+            }
+            else if (k == '+')
+            {
+                angle += 90;
+            }
+            else if (k == '-')
+            {
+                angle -= 90;
+            }
+
+            DrawFractalRecursive(plotView, currentPos, pointsList, axiom, index + 1);
+
+            DrawLine(pointsList);
+
             plotView.Model = plotModel;
         }
 

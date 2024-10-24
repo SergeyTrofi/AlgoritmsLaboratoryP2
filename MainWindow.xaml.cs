@@ -46,5 +46,12 @@ namespace LaboratoryP2
             stackHanoiTowers.Show();
             this.Close();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Chart chart = new Chart();
+            chart.Show();
+            this.Close();
+        }
     }
 }
