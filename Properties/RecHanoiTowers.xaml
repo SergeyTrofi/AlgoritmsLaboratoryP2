@@ -32,5 +32,6 @@
         <StackPanel x:Name="Tower1" Grid.Column="1" Margin="70,141,289,142"/>
         <StackPanel x:Name="Tower2" Grid.Column="1" Margin="311,141,53,141"/>
         <StackPanel x:Name="Tower3" Grid.Column="2" Margin="36,141,78,141"/>
+        <TextBlock x:Name="HowTower" Grid.Column="1" HorizontalAlignment="Left" Margin="371,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="26" FontSize="22"/>
     </Grid>
 </Window>

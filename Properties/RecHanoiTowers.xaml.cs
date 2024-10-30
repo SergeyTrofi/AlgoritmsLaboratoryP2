@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,7 +12,7 @@ namespace LaboratoryP2.Properties
     {
         private int diskCount;
         private int stepCount;
-        
+
         private List<List<Rectangle>> towers;
 
         public RecHanoiTowers()
@@ -43,6 +42,7 @@ namespace LaboratoryP2.Properties
         private void ResetGame()
         {
             StepsTextBlock.Text = string.Empty;
+            HowTower.Text = string.Empty; // Сброс текста в HowTower
             stepCount = 0;
             InitializeTowers();
         }
@@ -102,7 +102,7 @@ namespace LaboratoryP2.Properties
                 {
                     towers[from].RemoveAt(0);
                     if (flag)
-                    { 
+                    {
                         await Task.Delay(500);
                     }
                     RemoveDiskFromParent(disk);
@@ -111,10 +111,12 @@ namespace LaboratoryP2.Properties
 
                     stepCount++; // Увеличиваем количество шагов
                     StepsTextBlock.Text = stepCount.ToString(); // Обновляем текстовое поле
+
+                    // Обновление текстового блока HowTower
+                    HowTower.Text = $"{from + 1} -> {to + 1}"; // +1 для отображения башни с 1
                 }
             }
         }
-
 
         private bool CanMoveDisk(Rectangle disk, int to)
         {
@@ -142,6 +144,7 @@ namespace LaboratoryP2.Properties
         {
             StepsTextBlock.Text = string.Empty;
             DiscCountTextBox.Text = string.Empty;
+            HowTower.Text = string.Empty; // Сброс текста в HowTower
             InitializeTowers();
         }
     }
